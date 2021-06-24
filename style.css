@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+#drumstick {
+    animation: stick 2s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#drumstick_2 {
+    animation: stick 1.5s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#lcd-background {
+    animation: bg 5s;
+}
+
+/* [id='Group 2'] {
+    animation: group1 2s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes group1 {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(10deg);
+    }
+} */
+
+@keyframes bg {
+    0% {
+        background-color: linear-gradient(109.92deg, #FFFFFF -2.4%, rgba(0, 102, 255, 0) 117.47%);
+    }
+
+    25% {
+        background-color: linear-gradient(109.92deg, #FFFFFF -2.4%, rgba(0, 255, 240, 0) 117.47%);
+    }
+
+    50% {
+        background-color: linear-gradient(109.92deg, #FFFFFF -2.4%, rgba(204, 255, 0, 0) 117.47%);
+    }
+
+    75% {
+        background-color: linear-gradient(109.92deg, #FFFFFF -2.4%, rgba(255, 0, 0, 0) 117.47%);
+    }
+
+    100% {
+        background-color: linear-gradient(109.92deg, #FFFFFF -2.4%, rgba(0, 102, 255, 0) 117.47%);
+    }
+
+    
+}
+
+@keyframes stick {
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+}
